@@ -6,15 +6,16 @@
 
 
 def monthly_pay(hours: float, rate: float):
-    # hrs = input("Enter Hours:")
-    # h = float(hrs)
-    #rate = float(input('Enter hourly rate:'))
-    if hours <= float(40):
-        rate = rate
+    hours_diff = hours - 40
+    if hours_diff <= 0:
+        gross_pay = hours * rate
     else:
-        rate = 1.5 * rate
-    gross_pay = hours * rate
+        gross_pay = 40 * rate + hours_diff * 1.5 * rate
     print(gross_pay)
 
+
 if __name__ == '__main__':
-    monthly_pay(45, 10.75)
+    hrs = input("Enter Hours:")
+    hours = float(hrs)
+    rate = float(input('Enter hourly rate:'))
+    monthly_pay(hours, rate)

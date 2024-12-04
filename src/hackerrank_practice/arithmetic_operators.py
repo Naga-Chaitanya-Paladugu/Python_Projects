@@ -15,21 +15,14 @@
 # 15
 
 
-def arithmetic_operator(a: int, b: int) -> int:
-    value = None
-    # You do the algebra needed to figure out what c is
-    # print(a + b)
-    # print(a - b)
-    # print(a * b)
-    return value
-
-
 if __name__ == '__main__':
     while True:
         try:
             a = int(input('Enter a: '))
             b = int(input('Enter b: '))
-            print(f"Your answer is: {arithmetic_operator(a, b)}")
+            print(a + b)
+            print(a - b)
+            print(a * b)
             break
         except:
             print('Enter valid integer input')

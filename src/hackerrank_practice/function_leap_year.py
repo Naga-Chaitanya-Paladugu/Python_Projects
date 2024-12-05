@@ -21,17 +21,18 @@
 #
 # #The function must return a Boolean value (True/False).
 
-def leap_year(year):
-    if year%4==0:
-        if year%100==0:
-            if year%400==0:
-                print(True)
+def leap_year(year: int) -> bool:
+    is_leap = False
+    if year % 4 == 0:
+        if year % 100 == 0:
+            if year % 400 == 0:
+                is_leap = True
             else:
-                print(False)
+                is_leap = False
         else:
-            print(True)
-    else:
-        print(False)
+            is_leap = True
+    return is_leap
+
 
 if __name__ == '__main__':
     year = int(input('Enter a year: '))

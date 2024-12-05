@@ -23,17 +23,13 @@
 
 def leap_year(year: int) -> bool:
     is_leap = False
-    if year % 4 == 0:
-        if year % 100 == 0:
-            if year % 400 == 0:
-                is_leap = True
-            else:
-                is_leap = False
-        else:
-            is_leap = True
+    if (year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)):
+        is_leap = True
+    else:
+        is_leap = False
     return is_leap
 
 
 if __name__ == '__main__':
     year = int(input('Enter a year: '))
-    leap_year(year)
+    print(leap_year(year))

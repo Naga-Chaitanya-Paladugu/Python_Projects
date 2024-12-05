@@ -9,7 +9,7 @@ if __name__ == '__main__':
     largest = None
     smallest = None
     while True:
-        num = input('Enter a number: ')
+        num = input('Enter a number: ').lower()
         if num == 'done':
             break
         else:

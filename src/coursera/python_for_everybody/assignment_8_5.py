@@ -16,9 +16,7 @@ if __name__=='__main__':
     i= 0
     for line in fh:
         if line.startswith('From '):
-            line_stripped= line.rstrip()
-            line_splitted= line_stripped.split()
-            lst.append(line_splitted[1])
+            lst.append(line.strip().split()[1])
             print(lst[i])
             i= i+1
     count= len(lst)

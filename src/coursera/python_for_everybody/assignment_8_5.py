@@ -20,4 +20,4 @@ if __name__ == '__main__':
             print(lst[i])
             i = i + 1
     count = len(lst)
-    print("There were", count, "lines in the file with From as the first word")
+    print(f"There were {count} lines in the file with From as the first word")

@@ -5,7 +5,7 @@
 # When the program completes, sort and print the resulting words in
 # python sort() order as shown in the desired output
 #You can download the sample data at http://www.py4e.com/code3/romeo.txt
-
+# New version
 if __name__== '__main__':
     fname= input("Enter file name: ")
     fh = open(fname)

@@ -18,3 +18,7 @@ if __name__=='__main__':
         hour= line_lst[5].split(':')[0]
         # print(hour)
         hourly_count[hour]= hourly_count.get(hour, 0)+ 1
+    # print(hourly_count)
+    # print(hourly_count.items())
+    for hour, count in sorted(hourly_count.items()):
+            print(hour, count)

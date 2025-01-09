@@ -12,9 +12,32 @@
 
 def runner_up_score():
     arr_list= list(arr)
+    print(arr_list)
+
+    #Method 1
+    arr_sorted_lst= sorted(arr_list, reverse=True)
+    winner = arr_sorted_lst[0]
+    for i in arr_sorted_lst[1:]:
+        if i == winner:
+            continue
+        runner= i
+        print(f'The runner is {runner}')
+        quit()
+
+    # Method 2
+    #
+    # importing counter library to get unique counts of scores
+    # from collections import Counter
+    # counter= Counter(arr_list)
+    # score_dict= dict(counter)
+    # print(score_dict)
+    # score_list= list(score_dict.keys())
+    # runner_up = sorted(score_list, reverse=True)[1]
+    # print(f"The runner up is {runner_up}")
 
 
 
 if __name__ == '__main__':
-    n = int(input())
-    arr= map(int, input().split())
+    n = int(input('Enter the total player count: '))
+    arr= map(int, input('Enter each player\'s score with spaces: ').split())
+    runner_up_score()

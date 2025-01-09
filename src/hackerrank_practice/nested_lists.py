@@ -14,12 +14,12 @@ def runner_up():
     print(second_lowest)
 
     #creating names list with second-lowest score
-    name_lst= []
-    for i in student_list:
-        if not second_lowest in i:
-            continue
-        name_lst.append(i[0])
-    name_lst.sort()
+    name_lst= [i[0] for i in student_list if i[1]== second_lowest]
+    # for i in student_list:
+    #     if not second_lowest in i:
+    #         continue
+    #     name_lst.append(i[0])
+    # name_lst.sort()
     print(name_lst)
 
     #printing the names

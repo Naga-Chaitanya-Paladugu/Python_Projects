@@ -13,20 +13,23 @@
 def runner_up_score():
     arr_list= list(arr)
     print(arr_list)
+    runner_up_list = list(set(arr_list))
+    runner_up= sorted(runner_up_list, reverse=True)[1]
+    print(runner_up)
 
-    #Method 1
-    arr_sorted_lst= sorted(arr_list, reverse=True)
-    winner = arr_sorted_lst[0]
-    for i in arr_sorted_lst[1:]:
-        if i == winner:
-            continue
-        runner= i
-        print(f'The runner is {runner}')
-        quit()
+    #Method 2
+    # arr_sorted_lst= sorted(arr_list, reverse=True)
+    # winner = arr_sorted_lst[0]
+    # for i in arr_sorted_lst[1:]:
+    #     if i == winner:
+    #         continue
+    #     runner= i
+    #     print(f'The runner is {runner}')
+    #     quit()
 
-    # Method 2
-    #
-    # importing counter library to get unique counts of scores
+    #Method 3
+
+    #importing counter library to get unique counts of scores
     # from collections import Counter
     # counter= Counter(arr_list)
     # score_dict= dict(counter)

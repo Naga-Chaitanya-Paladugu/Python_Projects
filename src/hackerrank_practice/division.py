@@ -9,7 +9,6 @@
 # 0
 # 1
 # 4
-from audioop import reverse
 
 if __name__ == '__main__':
     n = int(input('Enter the number: '))

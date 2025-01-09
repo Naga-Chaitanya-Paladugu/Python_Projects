@@ -1,4 +1,4 @@
-# Given the participants' score sheet for your University Sports Day, you are required to find
+# Given the participants' score-sheet for your University Sports Day, you are required to find
 # the runner-up score. You are given n scores. Store them in a list and find the score of the runner-up.
 
 # Sample Input
@@ -42,5 +42,5 @@ def runner_up_score():
 
 if __name__ == '__main__':
     n = int(input('Enter the total player count: '))
-    arr= map(int, input('Enter each player\'s score with spaces: ').split())
+    arr= map(int, input("Enter each player's score with spaces: ").split())
     runner_up_score()

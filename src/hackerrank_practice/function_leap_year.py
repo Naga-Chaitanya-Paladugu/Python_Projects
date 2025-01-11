@@ -33,3 +33,32 @@ def leap_year(year: int) -> bool:
 if __name__ == '__main__':
     year = int(input('Enter a year: '))
     print(leap_year(year))
+
+############ Learnings:
+#1. bool??
+
+#2. multiple conditions inside if conditional statement possible.
+
+# 3. return inside a def method.
+# return is for sending results back, not for displaying them.
+# Multiple return statements can be used within a function based on conditions.
+# Use return when a function's output needs to be reused or processed further.
+# def check_positive(num):
+#     if num <= 0:
+#         return "Not Positive"
+#     return "Positive"
+# print(check_positive(-1))  # Output: Not Positive
+#
+# def do_nothing():
+#     return
+# print(do_nothing())  # Output: None
+#
+# def factorial(n):
+#     if n == 1:
+#         return 1
+#     return n * factorial(n - 1)
+# print(factorial(5))  # Output: 120
+#
+# def square_list(nums):
+#     return [x**2 for x in nums]
+# print(square_list([1, 2, 3]))  # Output: [1, 4, 9]

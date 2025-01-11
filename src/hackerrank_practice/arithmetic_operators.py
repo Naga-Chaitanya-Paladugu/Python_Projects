@@ -26,3 +26,5 @@ if __name__ == '__main__':
             break
         except:
             print('Enter valid integer input')
+
+#learnings: infinite while loop, try and exception.

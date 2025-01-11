@@ -15,3 +15,17 @@ if __name__ == '__main__':
 
 
         print(f"{result}")
+
+##### learnings:
+#1. range(start, stop, step). not just range(5).
+
+# 2. Situations Where None is Used:
+# Functions without a return statement or with return alone automatically return None.
+# Used to indicate "no result" or invalid outcomes in conditions.
+# Used as an initial value for variables that will be assigned later.
+#
+# def find_item(items, target):
+#     if target not in items:
+#         return None
+#
+# result = None

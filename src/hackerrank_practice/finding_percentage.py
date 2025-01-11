@@ -16,4 +16,4 @@ if __name__ == '__main__':
     query_name = input('Enter the name of the student for calculating average score: ')
     average_score(query_name)
 
-
+#learnings- quote inside a quote, _ in iterable loops, list comp.

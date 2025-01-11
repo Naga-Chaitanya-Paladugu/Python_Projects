@@ -44,3 +44,18 @@ if __name__ == '__main__':
     n = int(input('Enter the total player count: '))
     arr= map(int, input("Enter each player's score with spaces: ").split())
     runner_up_score()
+
+
+#learnings:
+# 1. Set for producing unique elements inside a curly brackets,
+
+# 2. counter function from collections library to get occurrences of counts,
+# it is a dictionary like object but not exactly dictionary.
+# print(type(counter))  # Output: <class 'collections.Counter'>
+# print(counter)  # Output: Counter({3: 3, 2: 2, 1: 1})
+# So, it can be used just a dictionary we can iterate, get keys, values etc.
+
+# 3. similarly .keys() and .values() create dict_keys and dict_values, can be iterable but not a list object,
+# has to be wrapped around list to use the entire features of a list.
+# print(keys_iterable)  # Output: dict_keys([1, 2, 3])
+# print(type(keys_iterable))  # Output: <class 'dict_keys'>

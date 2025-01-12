@@ -1,19 +1,20 @@
-def list_builder():
+def list_builder(*l, **kwargs):
     for _ in range(n):
         command = input('Enter the command: ').split()
-        if command[0] == 'insert':
-            method_name = command[0]
-            index, value = int(command[1]), int(command[2])
-            getattr(lst, method_name)(index, value)
-        elif len(command)>1:
-            method_name = command[0]
-            argument= int(command[1])
-            getattr(lst, method_name)(argument)
-        elif command[0] == 'print':
+        if command[0] == 'print':
             print(lst)
-        else:
+        else: # command[0] == 'insert':
             method_name = command[0]
-            getattr(lst, method_name)()
+            args = [int(i) for i in command[1:]] if len(command) > 1 else []
+            # index, value = int(command[1]), int(command[2])
+            getattr(lst, method_name)(*args)
+        # elif len(command)>1:
+        #     method_name = command[0]
+        #     argument= int(command[1])
+        #     getattr(lst, method_name)(argument)
+        # else:
+        #     method_name = command[0]
+        #     getattr(lst, method_name)()
 
 if __name__ == '__main__':
     lst = list()

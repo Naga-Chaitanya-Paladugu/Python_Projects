@@ -14,7 +14,6 @@
 # -2
 # 15
 
-
 if __name__ == '__main__':
     while True:
         try:

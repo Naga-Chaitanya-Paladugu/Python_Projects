@@ -13,6 +13,7 @@
 def runner_up_score():
     arr_list= list(arr)
     print(arr_list)
+    print(set(arr_list))
     runner_up_list = list(set(arr_list))
     runner_up= sorted(runner_up_list, reverse=True)[1]
     print(runner_up)
@@ -34,6 +35,8 @@ def runner_up_score():
     # counter= Counter(arr_list)
     # score_dict= dict(counter)
     # print(score_dict)
+    # print(score_dict.keys())
+    # print(score_dict.keys())
     # score_list= list(score_dict.keys())
     # runner_up = sorted(score_list, reverse=True)[1]
     # print(f"The runner up is {runner_up}")
@@ -48,12 +51,14 @@ if __name__ == '__main__':
 
 #learnings:
 # 1. Set for producing unique elements inside a curly brackets,
+# [2, 2, 4, 7, 5, 3] --> {2, 3, 4, 5, 7}
 
 # 2. counter function from collections library to get occurrences of counts,
 # it is a dictionary like object but not exactly dictionary.
 # print(type(counter))  # Output: <class 'collections.Counter'>
 # print(counter)  # Output: Counter({3: 3, 2: 2, 1: 1})
-# So, it can be used just a dictionary we can iterate, get keys, values etc.
+# You can use keys(), values(), and items() directly on Counter because it inherits from dict.
+# Convert to dict only when strict dictionary operations or format are required.
 
 # 3. similarly .keys() and .values() create dict_keys and dict_values, can be iterable but not a list object,
 # has to be wrapped around list to use the entire features of a list.
